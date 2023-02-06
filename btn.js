@@ -11,7 +11,8 @@ export default function Btn({ bgColor, btnLabel, textColor,Press }) {
         alignItems: "center",
         width: 250,
         paddingVertical: 5,
-        marginVertical: 5
+        marginVertical: 5,
+        marginTop: 12,
       }}
     >
       <Text style={{ 
