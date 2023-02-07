@@ -4,6 +4,7 @@ import BGImage from "./background";
 import Field from "./Field";
 import Btn from "./btn";
 
+
 export default function Login(props) {
   return (
     <BGImage>
@@ -22,7 +23,9 @@ export default function Login(props) {
           <View style={{ alignItems: "flex-end", width: "75%" }}>
             <Text>Forget Password?</Text>
           </View>
-          <Btn bgColor="#39B5E0" btnLabel={"Login"} textColor="white" />
+          <Btn bgColor="#39B5E0" btnLabel={"Login"} textColor="white" Press={() =>{
+            alert("welcome Boss"), props.navigation.navigate('Dashboard')
+          }} />
           <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
           <Text>Don't have an account?</Text>
           <TouchableOpacity onPress={()=> props.navigation.navigate("SignUp")}>
