@@ -28,7 +28,7 @@ export default function SignUp(props) {
           <View style={{ alignItems: "flex-end", width: "75%" }}>
             <Text>Forget Password?</Text>
           </View>
-          <Btn bgColor="#39B5E0" btnLabel={"Login"} textColor="white" />
+          <Btn bgColor="#39B5E0" btnLabel={"Signup"} textColor="white"  />
           <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
           <Text>Already have account?</Text>
           <TouchableOpacity onPress={()=> props.navigation.navigate("Login")}>
